@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Udemy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="#" class="logo">Udemy</a>
+
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search for anything here. Tech, Business, Art ..." />
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="nav-text">Trending Courses</a>
+      <a href="#" class="nav-text">My Learning</a>
+      <a href="#" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="nav-icon"><i class="fas fa-bell"></i></a>
+      <a href="#" class="nav-icon"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       CATEGORY MENU BAR (Purple Pills)
+  ═══════════════════════════════════════ -->
+  <div class="category-bar">
+    <div class="category-pills">
+      <a href="#" class="pill">Development</a>
+      <a href="#" class="pill">Business</a>
+      <a href="#" class="pill">IT &amp; Software</a>
+      <a href="#" class="pill">Personal Development</a>
+      <a href="#" class="pill">Design</a>
+      <a href="#" class="pill">Marketing</a>
+      <a href="#" class="pill">Lifestyle</a>
+      <a href="#" class="pill">Photography</a>
+      <a href="#" class="pill">Music</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO BANNER
+  ═══════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-box">
+        <h1>Udemy Flash Sale! 24 hours to save.</h1>
+        <p>Get the top Courses for just ₹449. Just one day to save but a lifetime to learn</p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-person">
+        
+        <div class="hero-avatar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       RECOMMENDED FOR YOU
+  ═══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Recommended for you</h2>
+      <p class="section-sub">Pick the best fit</p>
+
+      <div class="courses-row">
+
+        <div class="course-card">
+          <div class="course-img img1"><img src="./image1.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>2023 Python Data Visualisation Masterclass</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img2"><img src="./image2.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Web Development Bootcamp 2023 | Advance</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">3.2</span>
+              <span class="stars">★★★☆☆</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img3"><img src="./image3.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Master UI/UX Designing with Figma</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img4"><img src="./image4.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Basic to Advance Java Core Training</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TOPICS RECOMMENDED FOR YOU
+  ═══════════════════════════════════════ -->
+  <section class="section topics-section">
+    <div class="container">
+      <h2 class="section-title">Topics recommended for you</h2>
+
+      <div class="topics-grid">
+        <div class="topic-box">Website</div>
+        <div class="topic-box">Javascript</div>
+        <div class="topic-box">CSS</div>
+        <div class="topic-box">Mongo DB</div>
+        <div class="topic-box">Azure</div>
+        <div class="topic-box">AWS</div>
+        <div class="topic-box">Docker</div>
+        <div class="topic-box">GitHub</div>
+        <div class="topic-box">React js</div>
+      </div>
+
+      <!-- Suggest input -->
+      <div class="suggest-box">
+        <label>Suggest a topic:</label>
+        <div class="suggest-row">
+          <input type="text" id="topicInput" placeholder="e.g. Node.js, Vue, TypeScript..." />
+          <button onclick="suggestTopic()">Submit</button>
+        </div>
+        <p id="topicMsg"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MOST POPULAR
+  ═══════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Most Popular</h2>
+      <p class="section-sub">Pick the best fit</p>
+
+      <div class="courses-row">
+
+        <div class="course-card">
+          <div class="course-img img5"><img src="./image1.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>2023 Python Data Visualisation Masterclass</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img6"><img src="./image2.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Web Development Bootcamp 2023 | Advance</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">3.2</span>
+              <span class="stars">★★★☆☆</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img7"><img src="./image3.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Master UI/UX Designing with Figma</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-img img8"><img src="./image4.jpg" alt=""></div>
+          <div class="course-info">
+            <h3>Basic to Advance Java Core Training</h3>
+            <p class="instructor">Col Steele</p>
+            <div class="rating">
+              <span class="rating-num">4.8</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p class="price">₹449 <span class="old-price">₹999</span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">Udemy Business</a></li>
+            <li><a href="#">Teach on Udemy</a></li>
+            <li><a href="#">Get the app</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help and Support</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">Udemy</div>
+        <p class="copyright">© 2023 Udemy, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+
+</body>
+</html>
